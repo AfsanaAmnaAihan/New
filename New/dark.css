@@ -1,0 +1,32 @@
+ul {
+    list-style: none;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #1c2c40;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+div {
+    width: 200px;
+    height: 200px;
+    background: red;
+    
+    animation: bouncein 2s ease-in-out 3s alternate both;
+  
+}
+@keyframes bouncein {
+    0% {
+        transform: scale(0.5);
+    }
+    60% {
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
